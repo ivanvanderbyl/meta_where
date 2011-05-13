@@ -56,7 +56,7 @@ module MetaWhere
     end
   end
 
-  class PolymorphicJoinAssociation < ActiveRecord::Associations::ClassMethods::JoinDependency::JoinAssociation
+  class PolymorphicJoinAssociation < ActiveRecord::Associations::JoinDependency::JoinAssociation
 
     def initialize(reflection, join_dependency, polymorphic_class, parent = nil)
       reflection.check_validity!
